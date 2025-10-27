@@ -2,7 +2,7 @@
 
 A comprehensive Streamlit-based chatbot web application that allows users to upload and query multiple PDF documents using Large Language Models (LLMs) from OpenAI and Hugging Face. The application features semantic search, conversational memory, and secure API key management.
 
-## ðŸš€ Features
+## Features
 
 - **Multi-PDF Support**: Upload and process multiple PDF documents simultaneously
 - **Dual LLM Integration**: Support for both OpenAI and Hugging Face models
@@ -14,14 +14,14 @@ A comprehensive Streamlit-based chatbot web application that allows users to upl
 - **Error Handling**: Comprehensive error handling and logging
 - **Local Vector Database**: Uses ChromaDB for efficient document storage and retrieval
 
-## ðŸ“‹ Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - OpenAI API key (for OpenAI models)
 - Hugging Face API key (for Hugging Face models)
 - At least 4GB RAM (8GB recommended for Hugging Face models)
 
-## ðŸ› ï¸ Installation
+## Installation
 
 1. **Clone or download the project**
    `ash
@@ -55,7 +55,7 @@ A comprehensive Streamlit-based chatbot web application that allows users to upl
    # HUGGINGFACE_API_KEY=your_huggingface_api_key_here
    `
 
-## ðŸš€ Quick Start
+## Quick Start
 
 1. **Start the application**
    `ash
@@ -78,7 +78,7 @@ A comprehensive Streamlit-based chatbot web application that allows users to upl
    - Type your questions in the chat interface
    - The bot will search through your documents and provide answers
 
-## ðŸ“– Usage Guide
+## Usage Guide
 
 ### Uploading Documents
 
@@ -100,7 +100,7 @@ A comprehensive Streamlit-based chatbot web application that allows users to upl
 - **Save Conversation**: Save current conversation to disk
 - **Clear Database**: Remove all uploaded documents
 
-## âš™ï¸ Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -123,29 +123,29 @@ A comprehensive Streamlit-based chatbot web application that allows users to upl
 - **Chunk Size**: Larger chunks provide more context but use more memory
 - **Chunk Overlap**: Higher overlap improves context continuity
 
-## ðŸ—ï¸ Architecture
+## Architecture
 
 `
 pdf-chatbot-app/
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ chatbot.py          # Main chatbot orchestrator
-â”‚   â”œâ”€â”€ pdf_processor.py    # PDF text extraction and chunking
-â”‚   â”œâ”€â”€ vector_database.py  # ChromaDB integration
-â”‚   â”œâ”€â”€ embedding_service.py # Embedding generation
-â”‚   â”œâ”€â”€ llm_service.py      # LLM integration
-â”‚   â”œâ”€â”€ conversation_memory.py # Conversation management
-â”‚   â””â”€â”€ security.py         # Security and error handling
-â”œâ”€â”€ config/
-â”‚   â”œâ”€â”€ config.py           # Configuration management
-â”‚   â””â”€â”€ .env.example       # Environment variables template
-â”œâ”€â”€ data/                   # Vector database storage
-â”œâ”€â”€ docs/                   # Documentation
-â”œâ”€â”€ tests/                  # Unit tests
-â”œâ”€â”€ app.py                  # Main Streamlit application
-â””â”€â”€ requirements.txt        # Python dependencies
+src/
+chatbot.py          # Main chatbot orchestrator
+pdf_processor.py    # PDF text extraction and chunking
+vector_database.py  # ChromaDB integration
+embedding_service.py # Embedding generation
+llm_service.py      # LLM integration
+conversation_memory.py # Conversation management
+security.py         # Security and error handling
+config/
+config.py           # Configuration management
+ .env.example       # Environment variables template
+data/                   # Vector database storage
+docs/                   # Documentation
+tests/                  # Unit tests
+app.py                  # Main Streamlit application
+requirements.txt        # Python dependencies
 `
 
-## ðŸ”§ Advanced Configuration
+## Advanced Configuration
 
 ### Custom Models
 
@@ -168,7 +168,7 @@ HUGGINGFACE_EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"  # Bette
 3. **For memory efficiency**: Use OpenAI API instead of local Hugging Face models
 4. **For offline use**: Use Hugging Face models (requires more RAM)
 
-## ðŸš€ Deployment
+## Deployment
 
 ### Local Deployment
 
@@ -210,7 +210,7 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 3. Configure environment variables
 4. Set up monitoring and logging
 
-## ðŸ§ª Testing
+## Testing
 
 Run the test suite:
 
@@ -218,20 +218,20 @@ Run the test suite:
 python -m pytest tests/
 `
 
-## ðŸ“Š Monitoring and Logging
+## Monitoring and Logging
 
 - **Logs**: Stored in logs/ directory
 - **Performance metrics**: Available in the UI
 - **Error tracking**: Comprehensive error logging and user feedback
 
-## ðŸ”’ Security Considerations
+## Security Considerations
 
 - API keys are stored securely in environment variables
 - File uploads are validated for size and type
 - Input sanitization prevents injection attacks
 - Conversation data is stored locally (not sent to external services)
 
-## ðŸ¤ Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -239,11 +239,11 @@ python -m pytest tests/
 4. Add tests for new functionality
 5. Submit a pull request
 
-## ðŸ“„ License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## ðŸ†˜ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -273,7 +273,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Ensure all dependencies are correctly installed
 - Verify your API keys are valid and have sufficient credits
 
-## ðŸ”® Future Enhancements
+## Future Enhancements
 
 - [ ] Support for additional document formats (DOCX, TXT, etc.)
 - [ ] Multi-language support
@@ -283,3 +283,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [ ] User authentication and multi-user support
 - [ ] Advanced analytics and insights
 - [ ] Integration with cloud storage services
+
